@@ -1,8 +1,0 @@
-body { padding:0 !important; margin:0 !important; display:block !important; min-width:100% !important; width:100% !important; background:#f5f5f5; -webkit-text-size-adjust:none }
-a { color:#3366ff; text-decoration:none }
-a:hover { color:#000099; }
-p { font-size: 12px; padding:0 !important; margin:0 !important } 
-img { -ms-interpolation-mode: bicubic; /* Allow smoother rendering of resized image in Internet Explorer*/   }
-table { border: #000099; width: 100%;   }
-
-.mod_sisa{}

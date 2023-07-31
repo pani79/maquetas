@@ -1,0 +1,97 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/* Importaciones */
+
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@500&family=Roboto:wght@300;500;700;900&display=swap');
+
+
+/* BASICOS */
+
+body{
+	position:absolute;
+	width: 100%;
+	min-width: 750px;
+	margin: 0px;
+	padding: 0px;
+	
+	font-family:'Encode Sans', sans-serif;
+	font-size:12px;
+	font-weight: normal;
+	color: #333;
+	
+	background-color:#F5F5F5; /* G3 */
+}
+
+.contenedor{
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	width: 100%;
+}
+
+/* Msal - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+.msal{
+	font-family:'Encode Sans', sans-serif;
+    background-color:#37BBED;
+}
+
+/* SISA - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+.sisa{
+	font-family:'Encode Sans', sans-serif;
+    background-color:#F5F5F5;
+}
+
+
+.mod_sisa{			background-color: #3366ff !important; color: #fff !important;}
+.mod_ficha{			background-color: #cc6600 !important;}
+
+.reg_bndo{				background-color: #cc9900 !important;}
+.reg_ccc{				background-color: #ff0000 !important;}
+.reg_cus{				background-color: #3366ff !important;}
+.reg_deis{				background-color: #6ab074 !important;}
+.reg_epf{				background-color: #92278F !important;}
+.reg_esavi{				background-color: #383780 !important;}
+.reg_ieh{				background-color: #990066 !important;}
+.reg_iepna{				background-color: #009999 !important;}
+.reg_nomivac{			background-color: #383780 !important;}
+.reg_ongs{				background-color: #6db5ff !important;}
+.reg_pfis{				background-color: #d4bb92 !important;}
+.reg_pnh{				background-color: #009f98 !important;}
+.reg_paierc{			background-color: #514f85 !important;}
+.reg_pnt{				background-color: #eab8ea !important;}
+.reg_pronahep{			background-color: #CB134F !important;}
+.reg_prosane{			background-color: #0049ff !important;}
+.reg_recs{				background-color: #AE0EFF !important;}
+.reg_recann{			background-color: #105B19 !important;}
+.reg_redes{				background-color: #003a5e !important;}
+.reg_redh{				background-color: #485e88 !important;}
+.reg_redos{				background-color: #c13464 !important;}
+.reg_refecv{			background-color: #e4312b !important;}
+.reg_refes{				background-color: #3e699c !important;}
+.reg_refeps{			background-color: #a13d3b !important;}
+.reg_rehab{				background-color: #00bff2 !important;}
+.reg_renac{				background-color: #4AAAD3 !important;}
+.reg_renacel{			background-color: #f7c42d !important;}
+.reg_rendecar{			background-color: #b3cd43 !important;}
+.reg_renis{				background-color: #819e44 !important;}
+.reg_remediar{			background-color: #0092CF !important;}
+.reg_resam{				background-color: #F00505 !important;}
+.reg_residencias{		background-color: #3fa0d9 !important;}
+.reg_restringido{		background-color: #aaa !important;}
+.reg_rnh{				background-color: #71040A !important;}
+.reg_sa{				background-color: #107569 !important;}
+.reg_sip{				background-color: #3a77a7 !important;}
+.reg_sivile{			background-color: #003333 !important;}
+.reg_smis{				background-color: #00529E !important;}
+.reg_snvs{				background-color: #0ca6b2 !important;}
+.reg_svih{				background-color: #e0081b !important;}
+.reg_sumar{				background-color: #009fe3 !important;}
+.reg_telesalud{			background-color: #5BB4BF !important;}
+.reg_ufis{				background-color: #00315A !important;}
+
+
