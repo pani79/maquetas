@@ -1,0 +1,33 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+
+/* 
+==================================================================
+	Particulares
+ ==================================================================
+*/
+
+/* */ 
+
+#sisa_v3{
+	position: fixed;
+	top: 50%;
+	left:  50%;
+	margin: -272px 0 0 -250px;
+	/* background-color: #3366ff;
+	500 x 542 */
+}
+
+#sisa_v3 .sisa_logo{		margin-top: 40px; margin-bottom: 30px; padding-right:0px; padding-left:0px; margin-right:auto; margin-left:auto;}
+#sisa_v3 .anima_procesando, 
+#sisa_v3 .msal_logo{ margin-bottom: 10px;}
+
+#index_info{ position: relative; width: 500px; padding: 20px;}
+
+.util_margen_vert20 p{		margin-bottom: 0;}
+#sisa_index_navegadores {	position: relative; left: 50%; margin-left: -58px;}
+#index_info .util_rec_sfa3{ margin: 10px 50px 0px 50px;}
+#index_info .util_rec_sfa3 p{ margin: 0;}

@@ -1,0 +1,461 @@
+
+/*	Tablero Laboratorio Agrupado    ------------------------------------------------------------------- */
+
+/* .SNVS_tableroLaboratorioAgrupado_r1 .menu{  display: flex; flex-direction: row; justify-content: space-around; } */
+
+.SNVS_tableroLaboratorioAgrupado_r1 .menu h4 {    font-size: 16px; }
+.SNVS_tableroLaboratorioAgrupado_r1 .menu:first-child > div{
+	padding: 20px;
+	border-radius: 4px;
+	background-color: white;
+	box-shadow: 0 1px 4px rgba(0,0,0,.5);
+}
+.SNVS_tableroLaboratorioAgrupado_r1 .menu > div {    margin-top: 20px; }
+.SNVS_tableroLaboratorioAgrupado_r1 .menu > div:first-child {    margin-top: 0px; }
+.SNVS_tableroLaboratorioAgrupado_r1 .menu .item > *{  margin: 0px; padding: 0px; }
+
+.SNVS_tableroLaboratorioAgrupado_r1 .menu .subMenu {    margin-top: 20px; }
+.SNVS_tableroLaboratorioAgrupado_r1 .menu .subMenu h5{  font-size: 14px; color: #333; }
+.SNVS_tableroLaboratorioAgrupado_r1 .menu .subMenu > div{    display: flex; flex-direction: column; }
+
+.SNVS_tableroLaboratorioAgrupado_r1 .menu .subMenu .boton.radio{    
+    display: flex;
+    margin: 4px 0px;
+    padding: 4px 8px;
+    color: white;
+    background-color: #000099; 
+}
+.SNVS_tableroLaboratorioAgrupado_r1 .menu .subMenu .boton.radio:hover{    
+    cursor: pointer;
+    color: white;
+    background-color: #3366ff; 
+}
+.SNVS_tableroLaboratorioAgrupado_r1 .menu .subMenu .boton.radio span{    
+    display: flex;
+    position: relative;
+    width: 18px;
+    height: 18px;
+    margin: 0px 4px 0px 0px;
+    border-radius: 16px;
+    border: 1px solid rgba(0,0,0,.5);
+    background-color: darkgray; 
+}
+.SNVS_tableroLaboratorioAgrupado_r1 .menu .subMenu .boton.radio:hover span{ border: 4px solid #000099;}
+
+.SNVS_tableroLaboratorioAgrupado_r1 .menu .subMenu .boton.radio label{    
+    text-align: left;
+    margin: 0px;
+    padding: 0px;
+    /* 
+        border: 1px solid rgba(0,0,0,.5);
+        background-color: rosybrown; 
+    */
+}
+
+/* 
+.SNVS_tableroLaboratorioAgrupado_r1 .menu .subMenu ul{  display: flex; flex-direction: column; }
+
+.SNVS_tableroLaboratorioAgrupado_r1 .menu .subMenu ul li{  
+	margin: 4px;
+	padding: 4px 10px;
+	border-radius: 4px;
+	background-color: white;
+	box-shadow: 0 1px 4px rgba(0,0,0,.5);
+}
+.SNVS_tableroLaboratorioAgrupado_r1 .menu .subMenu ul li:hover{  
+    cursor: pointer;
+    background-color: #0ca6b2;
+    color: white;
+}
+ */
+
+.SNVS_tableroLaboratorioAgrupado_r1 .menu > .subMenu .item{    margin-top: 8px; display: flex; }
+.SNVS_tableroLaboratorioAgrupado_r1 .menu > .subMenu .item.sa{ justify-content: space-around; }
+.SNVS_tableroLaboratorioAgrupado_r1 .menu > .subMenu .item.sa > .boton{
+	padding: 4px 10px;
+	border-radius: 4px;
+	background-color: white;
+	color: #999;
+	box-shadow: 0 1px 4px rgba(0,0,0,.5);
+}
+.SNVS_tableroLaboratorioAgrupado_r1 .menu .item.inputs > *{    position: relative; width: 50%; /* border: red thin dotted; */ }
+.SNVS_tableroLaboratorioAgrupado_r1 .menu .item.inputs label{
+    width: 50%;
+    text-align: right;
+    margin-right: 4px;
+    color: #333; 
+}
+
+.SNVS_tableroLaboratorioAgrupado_r1 .menu input, 
+.SNVS_tableroLaboratorioAgrupado_r1 .menu select{ 
+    border-radius: 4px; 
+    /* background-color: red; background-color: palevioletred; */
+}
+.SNVS_tableroLaboratorioAgrupado_r1 .menu input > *, 
+.SNVS_tableroLaboratorioAgrupado_r1 .menu select > *{ 
+    
+    padding: 0px 20px;
+    /* background-color: red; background-color: palevioletred; */
+}
+
+
+
+.SNVS_tableroLaboratorioAgrupado_r1 .menu .form-check .form-check-label{ margin-left: 6px;}
+.SNVS_tableroLaboratorioAgrupado_r1 .menu .form-check input{ position: relative; top: 2px;}
+
+
+.SNVS_tableroLaboratorioAgrupado_r1 .menu hr{ margin: 20px 0px;}
+
+
+.SNVS_tableroLaboratorioAgrupado_r1 .menu .pieDeFormulario{ display: flex; flex-direction: row-reverse !important; margin-top: 20px;}
+.SNVS_tableroLaboratorioAgrupado_r1 .menu .pieDeFormulario .boton_general span{ margin-right: 0px;}
+
+.seleccionado,
+.seleccionado:hover{ border: thin solid lightgray; color: lightgray !important; background-color: #0ca6b2  !important; cursor: default !important; }
+ 
+
+.seleccionado > span,
+.seleccionado:hover > span{ 
+    border: 4px solid white !important;
+    background-color:  #0ca6b2 !important; 
+}
+
+
+
+.seleccionado > label,
+.seleccionado:hover > label{ cursor: default !important;}
+
+/* .deshabilitado{ display: none !important; } */
+
+.deshabilitado,
+.deshabilitado:hover{background-color: white  !important; color: lightgray !important; cursor: default !important; }
+
+.deshabilitado > label,
+.deshabilitado:hover > label{ cursor: default !important;}
+
+.deshabilitado > span{    
+    border: 1px solid rgba(0,0,0,.1) !important;
+    background-color: lightgray !important; 
+}
+.deshabilitado:hover > span{ border: 1px solid rgba(0,0,0,.1);}
+
+/* 
+.deshabilitado > span,
+.deshabilitado:hover > span{ 
+    border: 1px solid rgba(0,0,0,.05) !impo rtant;
+    background-color: lightgray !important;
+    cursor: default !important;
+}
+*/
+
+
+/* Lista - seleccion - - - - - - - - - - - - - - - - - */
+
+.SNVS_tableroLaboratorioAgrupado_r1 .info .datos .listaSeleccion > div{ padding: 4px 4px;   }
+.SNVS_tableroLaboratorioAgrupado_r1 .info .datos .listaSeleccion > div > div{ 
+    display: flex;
+    flex-direction: column;
+    border: 1px lightgray solid;
+    padding: 4px;
+    border-radius: 8px;
+    margin: 1px;
+    min-height: 94px;
+}
+.SNVS_tableroLaboratorioAgrupado_r1 .info .datos .listaSeleccion > div > div.boton_neg > *,
+.SNVS_tableroLaboratorioAgrupado_r1 .info .datos .listaSeleccion > div > div.boton_pos > *{ 
+    color: white;
+}
+.SNVS_tableroLaboratorioAgrupado_r1 .info .datos .listaSeleccion > div > div:hover{ 
+    background-color: #0ca6b2; 
+    border: 1px #0ca6b2 solid; 
+    box-shadow: 0 1px 4px rgba(0,0,0,.5); 
+    cursor: pointer; 
+}
+.SNVS_tableroLaboratorioAgrupado_r1 .info .datos .listaSeleccion > div > div:hover > *{ color: white;}
+.SNVS_tableroLaboratorioAgrupado_r1 .info .datos .listaSeleccion > div > div span{ font-size: 56px;  }
+.SNVS_tableroLaboratorioAgrupado_r1 .info .datos .listaSeleccion > div > div label{ margin: 4px 0px 0px 0px; font-weight: normal;  }
+.SNVS_tableroLaboratorioAgrupado_r1 .info .datos .listaSeleccion > div > div > *{     text-align: center; /* border: palevioletred thin dotted; */}
+
+
+
+/* Lista - seleccion (horizontal) - - - - - - - - - - - - - - - - - */
+
+.SNVS_tableroLaboratorioAgrupado_r1 .info .datos .listaSeleccionHorizontal > div{ padding: 0px;   }
+.SNVS_tableroLaboratorioAgrupado_r1 .info .datos .listaSeleccionHorizontal > div > div{ 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    justify-items: stretch;
+    border: 1px lightgray solid;
+    padding: 0px;
+    border-radius: 8px;
+    margin: 1px;
+    min-height: 52px;
+}
+/* .SNVS_tableroLaboratorioAgrupado_r1 .info .datos .listaSeleccionHorizontal > div > div > *{ border: 1px red solid;} */
+.SNVS_tableroLaboratorioAgrupado_r1 .info .datos .listaSeleccionHorizontal > div > div:hover{ 
+    background-color: #0ca6b2; 
+    border: 1px #0ca6b2 solid; 
+    box-shadow: 0 1px 4px rgba(0,0,0,.5); 
+    cursor: pointer; 
+}
+.SNVS_tableroLaboratorioAgrupado_r1 .info .datos .listaSeleccionHorizontal > div > div:hover > *{ background-color: #0ca6b2 !important; color: white;}
+.SNVS_tableroLaboratorioAgrupado_r1 .info .datos .listaSeleccionHorizontal > div > div > *{     text-align: center; /* border: palevioletred thin dotted; */}
+
+.SNVS_tableroLaboratorioAgrupado_r1 .info .datos .listaSeleccionHorizontal > div > div span{ 
+    position: relative;
+    left: 6px;
+    font-size: 36px;
+    min-width: 20%;
+    /* background-color: peru; */
+}
+.SNVS_tableroLaboratorioAgrupado_r1 .info .datos .listaSeleccionHorizontal > div > div label{ 
+    position: relative;
+    min-width: 50%;
+    margin: 0px; 
+    font-weight: normal;  
+    text-align: left;
+}
+.SNVS_tableroLaboratorioAgrupado_r1 .info .datos .listaSeleccionHorizontal > div > div > div:last-child{ 
+    position: relative;
+    right: 0px;
+    min-width: 30%;
+    height: 50px;
+    /* font-size: 24px; */
+    font-weight: bold;
+   /*  background-color: peru; */
+    border-radius: 0px 8px 8px 0px;
+}
+.SNVS_tableroLaboratorioAgrupado_r1 .info .datos .listaSeleccionHorizontal > div > div > div:last-child.col_pos{ background-color: #006633;}
+.SNVS_tableroLaboratorioAgrupado_r1 .info .datos .listaSeleccionHorizontal > div > div > div:last-child.col_neg{ background-color: #990033;}
+
+.SNVS_tableroLaboratorioAgrupado_r1 .info .datos .listaSeleccionHorizontal > div > div * p{ 
+    position: relative;
+    top: 50%;    
+    margin-top: -10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+}
+
+
+/* Lista - indicador - - - - - - - - - - - - - - - - - */
+
+.SNVS_tableroLaboratorioAgrupado_r1 .info .datos .listaIndicador > div{ padding: 4px 4px; /* border: palevioletred thin dotted; */  }
+.SNVS_tableroLaboratorioAgrupado_r1 .info .datos .listaIndicador > div > div{ 
+    display: flex;
+    flex-direction: row;
+    border: 1px lightgray solid;
+    /* padding: 4px; */
+    border-radius: 8px;
+    margin: 1px;
+    min-height: 50px;
+}
+.SNVS_tableroLaboratorioAgrupado_r1 .info .datos .listaIndicador > div > div:hover{ 
+    background-color: #0ca6b2; 
+    border: 1px #0ca6b2 solid; 
+    box-shadow: 0 1px 4px rgba(0,0,0,.5); 
+    cursor: pointer; 
+}
+.SNVS_tableroLaboratorioAgrupado_r1 .info .datos .listaIndicador > div > div:hover > *{ color: white;}
+
+
+.SNVS_tableroLaboratorioAgrupado_r1 .info .datos .listaIndicador > div > div > *:first-child{ width: 75%;}
+.SNVS_tableroLaboratorioAgrupado_r1 .info .datos .listaIndicador > div > div > *:last-child{ 
+    width: 25%;
+    border-radius: 0px 8px 8px 0px;
+}
+.SNVS_tableroLaboratorioAgrupado_r1 .info .datos .listaIndicador > div > div > *:last-child p{ 
+    position: relative;
+    top: 50%;
+    margin-top: -13px; 
+    font-size: 20px;
+    font-weight: bold;  
+    color: white;
+}
+
+.SNVS_tableroLaboratorioAgrupado_r1 .info .datos .listaIndicador > div > div > div:last-child.col_pos{ background-color: #006633;}
+.SNVS_tableroLaboratorioAgrupado_r1 .info .datos .listaIndicador > div > div > div:last-child.col_neg{ background-color: #990033;}
+.SNVS_tableroLaboratorioAgrupado_r1 .info .datos .listaIndicador > div > div > div:last-child{ background-color: #990033;}
+
+.SNVS_tableroLaboratorioAgrupado_r1 .info .datos .listaIndicador > div > div span{ font-size: 48px;  }
+.SNVS_tableroLaboratorioAgrupado_r1 .info .datos .listaIndicador > div > div label{ 
+    margin: 0px 4px; 
+    font-weight: normal;
+    text-align: left;
+    display: flex;
+    align-self: center;  
+    /* border: 1px #0ca6b2 solid;  */
+}
+.SNVS_tableroLaboratorioAgrupado_r1 .info .datos .listaIndicador > div > div > *{     text-align: center; /* border: palevioletred thin dotted; */}
+
+
+
+
+
+/* 
+
+        .SNVS_tableroLaboratorioAgrupado_r1 .menu .configuracion .paso2a > div > div{ min-height: 90px !important; padding: 0px;}
+        .SNVS_tableroLaboratorioAgrupado_r1 .menu .configuracion .paso2a > div > div > div{ 
+            display: flex;
+            flex-direction: column;
+            border: 1px lightgray solid;
+            padding: 4px;
+            border-radius: 8px;
+            margin: 1px;
+            min-height: 82px;
+        }
+        .SNVS_tableroLaboratorioAgrupado_r1 .menu .configuracion .paso2a > div > div > div:hover{ background-color: #0ca6b2; border: 1px #0ca6b2 solid; box-shadow: 0 1px 4px rgba(0,0,0,.5); cursor: pointer; }
+        .SNVS_tableroLaboratorioAgrupado_r1 .menu .configuracion .paso2a > div > div > div:hover > *{ color: white;}
+        
+        .SNVS_tableroLaboratorioAgrupado_r1 .menu .configuracion .paso2a > div > div > div > *{ text-align: center;}
+        .SNVS_tableroLaboratorioAgrupado_r1 .menu .configuracion .paso2a span{ font-size: 34px; margin-bottom: 8px; text-align: center; }
+        .SNVS_tableroLaboratorioAgrupado_r1 .menu .configuracion .paso2a small{ font-size: 8px; }
+        
+        .SNVS_tableroLaboratorioAgrupado_r1 .menu .configuracion .paso2b .lista > div,
+        .SNVS_tableroLaboratorioAgrupado_r1 .menu .configuracion .paso3a .lista > div { 
+            display: flex; 
+            flex-direction: row; 
+            justify-content: space-between;
+        }
+        
+        .SNVS_tableroLaboratorioAgrupado_r1 .menu .configuracion .paso2b .lista > div:hover,
+        .SNVS_tableroLaboratorioAgrupado_r1 .menu .configuracion .paso3a .lista > div:hover { 
+            cursor: pointer;
+            background-color: #0ca6b2;
+            color: white;
+        }
+        .SNVS_tableroLaboratorioAgrupado_r1 .menu .configuracion .paso2b .lista > div span,
+        .SNVS_tableroLaboratorioAgrupado_r1 .menu .configuracion .paso3a .lista > div span {  
+            position: relative;
+            width: 20px !important;
+            height: 20px !important;
+            top: 3px;
+            right: 3px;
+            border-radius: 16px; 
+            background-color: #3366ff;; 
+            color: white; 
+            font-size: 16px; 
+        }
+        .SNVS_tableroLaboratorioAgrupado_r1 .menu .configuracion .paso2b .lista > div:hover span,
+        .SNVS_tableroLaboratorioAgrupado_r1 .menu .configuracion .paso3a .lista > div:hover span{ 
+            color: #0ca6b2;
+            background-color: white;
+        }
+        .SNVS_tableroLaboratorioAgrupado_r1 .menu .configuracion .paso2b .lista > div label,
+        .SNVS_tableroLaboratorioAgrupado_r1 .menu .configuracion .paso3a .lista > div label { 
+            width: auto; 
+            display: flex;
+            flex-grow: 1;
+            font-weight: normal; 
+            border-bottom: 1px solid rgba(0,0,0,.5);
+            padding: 4px 0px 4px 10px;
+            margin: 0px;
+        }
+
+
+
+
+
+
+        .SNVS_tableroLaboratorioAgrupado_r1 .item{	display: flex; flex-direction: row;	}
+        .SNVS_tableroLaboratorioAgrupado_r1 .item > *:first-child{		text-align: right; color: gray; margin-right: 4px;	}
+        .SNVS_tableroLaboratorioAgrupado_r1 .item > *{	width: 50%;	}
+
+        .SNVS_tableroLaboratorioAgrupado_r1 .menu .seleccion,
+        .SNVS_tableroLaboratorioAgrupado_r1 .menu .configuracion{
+            padding: 20px;
+            border-radius: 4px;
+            background-color: white;
+            box-shadow: 0 1px 4px rgba(0,0,0,.5);
+        }
+
+
+        .SNVS_tableroLaboratorioAgrupado_r1 .menu .configuracion .botonSeleccion{
+            padding: 10px 20px;
+            margin: 10px;
+            border-radius: 4px;
+            box-shadow: 0 1px 4px rgba(0,0,0,.5);
+            text-align: center;
+            cursor: pointer;
+        }
+        .SNVS_tableroLaboratorioAgrupado_r1 .menu .configuracion .botonSeleccion *{ margin: 0px; padding: 0px;}
+
+        .SNVS_tableroLaboratorioAgrupado_r1 .menu .configuracion .paso2a > div > div{ min-height: 90px !important; padding: 0px;}
+        .SNVS_tableroLaboratorioAgrupado_r1 .menu .configuracion .paso2a > div > div > div{ 
+            display: flex;
+            flex-direction: column;
+            border: 1px lightgray solid;
+            padding: 4px;
+            border-radius: 8px;
+            margin: 1px;
+            min-height: 82px;
+        }
+        .SNVS_tableroLaboratorioAgrupado_r1 .menu .configuracion .paso2a > div > div > div:hover{ background-color: #0ca6b2; border: 1px #0ca6b2 solid; box-shadow: 0 1px 4px rgba(0,0,0,.5); cursor: pointer; }
+        .SNVS_tableroLaboratorioAgrupado_r1 .menu .configuracion .paso2a > div > div > div:hover > *{ color: white;}
+
+        .SNVS_tableroLaboratorioAgrupado_r1 .menu .configuracion .paso2a > div > div > div > *{ text-align: center;}
+        .SNVS_tableroLaboratorioAgrupado_r1 .menu .configuracion .paso2a span{ font-size: 34px; margin-bottom: 8px; text-align: center; }
+        .SNVS_tableroLaboratorioAgrupado_r1 .menu .configuracion .paso2a small{ font-size: 8px; }
+
+        .SNVS_tableroLaboratorioAgrupado_r1 .menu .configuracion .paso2b .lista > div,
+        .SNVS_tableroLaboratorioAgrupado_r1 .menu .configuracion .paso3a .lista > div { 
+            display: flex; 
+            flex-direction: row; 
+            justify-content: space-between;
+        }
+
+
+        .SNVS_tableroLaboratorioAgrupado_r1 .menu .configuracion .paso2b .lista > div:hover,
+        .SNVS_tableroLaboratorioAgrupado_r1 .menu .configuracion .paso3a .lista > div:hover { 
+            cursor: pointer;
+            background-color: #0ca6b2;
+            color: white;
+        }
+        .SNVS_tableroLaboratorioAgrupado_r1 .menu .configuracion .paso2b .lista > div span,
+        .SNVS_tableroLaboratorioAgrupado_r1 .menu .configuracion .paso3a .lista > div span {  
+            position: relative;
+            width: 20px !important;
+            height: 20px !important;
+            top: 3px;
+            right: 3px;
+            border-radius: 16px; 
+            background-color: #3366ff;; 
+            color: white; 
+            font-size: 16px; 
+        }
+        .SNVS_tableroLaboratorioAgrupado_r1 .menu .configuracion .paso2b .lista > div:hover span,
+        .SNVS_tableroLaboratorioAgrupado_r1 .menu .configuracion .paso3a .lista > div:hover span{ 
+            color: #0ca6b2;
+            background-color: white;
+        }
+        .SNVS_tableroLaboratorioAgrupado_r1 .menu .configuracion .paso2b .lista > div label,
+        .SNVS_tableroLaboratorioAgrupado_r1 .menu .configuracion .paso3a .lista > div label { 
+            width: auto; 
+            display: flex;
+            flex-grow: 1;
+            font-weight: normal; 
+            border-bottom: 1px solid rgba(0,0,0,.5);
+            padding: 4px 0px 4px 10px;
+            margin: 0px;
+        }
+        .SNVS_tableroLaboratorioAgrupado_r1 .menu .configuracion .paso2b .lista > div *,
+        .SNVS_tableroLaboratorioAgrupado_r1 .menu .configuracion .paso3a .lista > div * {    border: 1px dotted rgba(255,0,0,.5);  }
+
+
+        .SNVS_tableroLaboratorioAgrupado_r1 .menu .configuracion .paso3a .provincia{
+            background-color: #0ca6b2;
+            color: white;
+            border-radius: 4px;
+            box-shadow: 0 1px 4px rgba(0,0,0,.5);
+            padding: 20px;
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+        .SNVS_tableroLaboratorioAgrupado_r1 .menu .configuracion .paso3a .provincia span{  font-size: 72px; text-align: center; width: 100%; border-bottom: 1px solid rgba(0,0,0,.5);   }
+
+        .SNVS_tableroLaboratorioAgrupado_r1 .barraMenu{ height: 38px; margin-top: 10px;    }
+
+ */

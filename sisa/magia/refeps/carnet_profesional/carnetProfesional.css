@@ -1,0 +1,439 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@400;700&display=swap');
+
+
+/* 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+Estilos heredados de SISA
+*/
+
+
+
+body{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+	margin: 0px;
+	padding: 0px;
+	
+	font-family:'Roboto', sans-serif;
+	font-size:12px;
+	font-weight: normal;
+	color: #333;
+	
+	background-color:#F5F5F5; /* G3 */
+}
+
+
+hr { 	
+	width: 100%;
+	height: 1px;
+	background-color: rgba(0, 0, 0, .5);
+	margin: 4px 0 30px 0; 
+}
+
+/*Links
+a{			color:#37BBED;  font-weight:normal; text-decoration:none;}
+a:hover{	text-decoration: underline;color:#37BBED; }
+a:focus{	text-decoration: underline;color:#37BBED; }
+*/
+
+/* CABECERA  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+#cabecera{
+	position:relative;
+	height: 74px;
+    background-color:#37BBED;
+    border-bottom: 1px #50535C solid;
+}
+
+#cabecera .cabecera_izq{
+    display: flex;
+    flex-direction: row;
+    position: relative; 
+    z-index: 2000; 
+    overflow: hidden; 
+    height: 73px;
+}
+#cabecera .cabecera_izq *{ position: relative; align-self: center;}
+#cabecera .cabecera_izq span{   color: white !important; padding: 10px;}
+#cabecera .cabecera_izq span:first-child{   padding-left: 0px;}
+#cabecera .cabecera_izq span:last-child{   padding-right: 0px;}
+#cabecera .cabecera_izq span.sisa{   font-size: 200px;}
+#cabecera .cabecera_izq span.impulsa{   font-size: 150px;}
+#cabecera .cabecera_izq span.msal{   font-size: 86px;}
+*/
+
+/* PIE  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+.pie{
+    width: 100%;
+    color: #fff;
+    background-color: #50535C;
+    text-align:center;
+}
+
+.pie a{			color: #ebebff; font-weight: normal; text-decoration:none;	}	
+.pie a:hover{	text-decoration: underline;	}	
+
+.pie .seguridad_seccion{
+	width: 100%;
+	text-align:center;
+    background-color: #37BBED;
+}
+.pie .proyectos > .row > div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative; 
+    height: 100px;
+    z-index: 2000; 
+    overflow: hidden; 
+}
+.pie .proyectos span{
+    display: flex;
+    align-self: center;
+    overflow: hidden;
+}
+
+.pie span.sisa{   font-size: 120px;}
+.pie span.impulsa{   font-size: 180px;}
+.pie span.msal{   font-size: 130px;}
+.pie span.presidencia{   font-size: 200px;}
+.pie span.publicidad{   font-size: 260px;}
+
+
+.pie .row > *{  
+    display: flex;
+    align-self: center;
+}
+.pie .row .contenedorDatos{   
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px 0px;
+}
+.pie .row .contenedorDatos > *{    padding: 0px; margin: 0px; }
+.pie .row .contenedorLogo{   
+    position: relative;
+    display: flex;
+    align-self: center;
+    height: 60px;
+    overflow: hidden;
+}
+.pie .row .contenedorLogo > *{   
+    position: relative;
+    display: flex;
+    align-self: center;
+    justify-items: center;
+}
+.pie .row .dngiss h4{ font-family: 'Roboto'; font-weight: bold; font-size: 26px;}
+.pie .row .dngiss p{ margin-top: 2px; }
+.pie .row .impulsa p{ margin-top: -10px; }
+.pie .row .sisa p{ margin-top: -6px; }
+
+body .col-12{    position: relative; }
+*/
+
+
+
+
+/* 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+Estilos propios del carnet
+*/
+
+
+.carnet{
+    position: relative;
+    left: 50%;
+    margin-left: -400px;
+    display: flex;
+    flex-direction: column;
+    width: 906px;
+    height: 540px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 15px;  
+    box-shadow: 0 1px 4px rgba(0,0,0,.5) !important;
+    background-color: #37BBED; 
+    color: white !important;
+    font-family: 'Encode Sans', sans-serif !important;
+}
+.carnet,
+.carnet > div{  box-sizing: border-box; }
+
+.carnet h1,
+.carnet h2,
+.carnet h3,
+.carnet p{
+    margin: 0px;
+    padding: 0px;
+}
+
+.carnet > div{  padding: 4px 0px; }
+
+.carnet > .cabecera{  
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    height: 90px !important;
+    border-radius: 15px 15px 0px 0px;
+}
+.carnet > .cabecera > .icono{   width: 120px; padding-top: 18px; padding-left: 40px; padding-right: 20px; }
+.carnet > .cabecera > .icono span{   font-size: 64px;  }
+.carnet > .cabecera > div:last-child{   
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2; 
+    justify-content: center;
+    padding-right: 30px;
+    border-bottom: 2px solid white;
+    /*
+    align-content: center;
+    padding-top: 6px;
+    padding-bottom: 16px; */
+}
+.carnet > .cabecera > div:last-child h1{    font-size: 34px; line-height: 34px; font-weight: bold; }
+.carnet > .cabecera > div:last-child h3{    font-size: 16px; /* display: flex; align-self: flex-start; */}
+.carnet > .cabecera > div:last-child > *{ display: flex; text-align: left; align-self: flex-start; }
+
+
+.carnet > .cuerpo{    
+    display: flex; 
+    flex-direction: column; 
+    height: 348px;
+    padding: 40px 40px;
+}
+.carnet > .cuerpo{     display: flex; flex-direction: row;}
+.carnet > .cuerpo > div:first-child{   width: 30%; }
+.carnet > .cuerpo > div:last-child{   width: 70%; }
+
+.carnet > .cuerpo .foto{   position: relative; width: 220px; height: 300px; overflow: hidden; }
+.carnet > .cuerpo .foto > img {    width: 100%; }
+
+.carnet > .cuerpo .info{  margin-bottom: 20px;}
+.carnet > .cuerpo .info h3{    font-size: 22px !important; line-height: 22px; font-weight: normal; }
+.carnet > .cuerpo .info p{     font-size: 16px !important; line-height: 16px; font-weight: bold; padding-bottom: 6px; }
+
+.carnet > .cuerpo .detalles{  display: flex; flex-direction: column; padding-top: 20px; border-top: white 2px solid; }
+
+.carnet > .cuerpo .detalles > div{  display: flex; flex-direction: row; }
+.carnet > .cuerpo .detalles > div > div{  width: 50%; }
+.carnet > .cuerpo .detalles > div > div:first-child{  padding-right: 10px; }
+.carnet > .cuerpo .detalles > div > div:last-child{  padding-left: 10px; }
+
+.carnet > .cuerpo .detalles .info{  display: flex; flex-direction: row; margin-bottom: 10px; }
+.carnet > .cuerpo .detalles .info p{     font-size: 16px !important; line-height: 18px; font-weight: normal; padding-bottom: 6px; }
+.carnet > .cuerpo .detalles .info p:first-child{     width: 40%; text-align: right; padding-right: 10px; font-weight: bold; }
+.carnet > .cuerpo .detalles .info p:last-child{     width: 60%; }
+
+/* 
+.carnet > .cuerpo > div:first-child > div{   width: 33%; }
+.carnet > .cuerpo > div:first-child > div:last-child{     padding-left: 20px;}
+ */
+
+
+.carnet > .pie{
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+    justify-content: flex-end;
+    height: 70px;
+    width: 100%;
+    padding: 10px 40px;
+    border-radius: 0px 0px 15px 15px;
+    overflow: hidden; 
+}
+
+.carnet > .pie > .icono{ margin-left: 40px; }
+.carnet > .pie > .icono > *{ background-repeat: no-repeat !important; }
+.carnet > .pie *{ position: relative; align-self: center;  }
+
+.carnet > .pie span{ display: flex; color: white; }
+.carnet > .pie .msal span{ font-size: 120px; }
+
+.carnet > .escudo{  
+    position: absolute; 
+    width: 480px; 
+    height: 530px; 
+    top: 10px; 
+    right: 0px; 
+    text-align: right;
+    overflow: hidden; 
+}
+.carnet > .escudo span {
+	position: relative;
+	right: -80px;
+	font-size: 510px;
+	opacity: .1;
+}
+
+
+
+.prov_02{ 
+    display: block;
+    text-indent: -9999px;
+    width: 140px;
+    height: 80px;
+    background: url(imagenes/logo_provincia_02_bsas.svg);
+    background-size: 140px 80px;
+}
+.prov_23{ 
+    display: block;
+    text-indent: -9999px;
+    width: 130px;
+    height: 80px;
+    background: url(imagenes/logo_provincia_23_tdf.svg);
+    background-size: 130px 80px;
+}
+
+.reg_refeps{ background-color: #a13d3b !important;}
+
+/* dorso    . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+
+.carnet.dorso > .cabecera{  height: 37px !important; background-color: #37BBED !important;}
+
+.carnet.dorso > .cuerpo{    display: flex; flex-direction: row; height: 360px !important; }
+.carnet.dorso > .cuerpo > div{     width: 50%;}
+
+.carnet.dorso > .cuerpo .codigoQr{     
+    position: relative;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    overflow: visible;
+    height: 300px;
+}
+.carnet.dorso > .cuerpo .codigoQr > img{     box-sizing: border-box; }
+.carnet.dorso > .pie{
+    display: flex;
+    justify-content: space-between;
+    height: 125px !important;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 0px 0px 15px 15px;
+    background-color:white;
+    color: #333333;
+    border-top: 1px solid #707070;
+}
+
+.carnet.dorso > .pie > div:nth-child(1),
+.carnet.dorso > .pie > div:nth-child(3){ flex-grow: 0; }
+.carnet.dorso > .pie > div:nth-child(2){ 
+    flex-grow: 2; 
+    padding-left: 25px;
+}
+.carnet.dorso > .pie span{ color: #333333; font-weight: normal; }
+.carnet.dorso > .pie .vacunaCovid > *{ margin: 0px; padding: 0px; text-align: left; font-weight: bold; }
+.carnet.dorso > .pie .vacunaCovid > h3{ font-size: 34px; line-height: 34px; }
+.carnet.dorso > .pie .covid > span{ font-size: 80px; margin-top: 4px; }
+
+.carnet.dorso > .pie .msal > span{ font-size: 240px; color: #808285; }
+.carnet.dorso > .pie .impulsaLogo span{ font-size: 120px; margin-right: 30px; margin-top: 10px; color: #808285; }
+*/
+
+
+
+/* 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+Estilos del aviso
+
+
+.noCarnet .carnet{
+    position: relative;
+    left: 50%;
+    width: 400px;
+    height: 200px;
+    margin-left: -200px;
+    border-radius: 15px;
+}
+.noCarnet .carnet h1,
+.noCarnet .carnet p{
+    font-family:'Roboto', sans-serif !important;
+}
+
+.noCarnet .carnet .cabecera{  
+    display: flex;
+    height: 48px !important;
+    padding: 10px 20px;
+    border-radius: 15px 15px 0px 0px;
+    background-color: #37BBED;
+}
+.noCarnet .carnet .cabecera > *{ color: white; font-size: 20px; font-weight: bold; }
+.noCarnet .carnet .cuerpo{    display: flex; flex-direction: row; height: 130px; }
+
+.noCarnet .carnet .cuerpo .icono { padding-right: 20px; }
+.noCarnet .carnet .cuerpo .icono > div{     position: relative;}
+.noCarnet .carnet .cuerpo .icono > div span{ 
+    position: relative;
+    top: 0px;
+    right: 18px;
+    font-size: 80px; 
+    color: #37BBED; 
+}
+.noCarnet .carnet > .pie { display: none;
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+    justify-content: flex-end;
+    height: 30px;
+    width: 100%;
+    padding: 10px 40px;
+    border-radius: 0px 0px 15px 15px;
+    background-color: white;
+    color: rgb(97, 93, 93);
+    overflow: hidden;
+}
+*/
+
+/* 
+Debug 
+
+*/
+
+
+/* 
+.carnet > .pie > .icono { border: tomato thin dashed; }
+.carnet > .pie > .icono > *{ border: dotted black 1px; }
+.carnet > .cabecera > div:last-child{       border-bottom: 2px solid white;}
+.carnet > .cabecera > div:last-child > *{ border: dotted black 1px; }
+.carnet > .cuerpo .detalles{  background-color: rgba(0, 0, 0, .5);}
+.carnet > .cuerpo .detalles > div{  border: tomato thin dotted; }
+.carnet > .cuerpo .detalles > div > div{  width: 50%; border: dotted royalblue 1px; }
+.botonCambio{
+    position: absolute;
+    top: 25%;
+    right: 0px;
+}
+.botonCambio > .Botoncito{
+    position: relative;
+    z-index: 2001;
+    display: flex;
+    padding: 4px;
+    border-radius: 8px 0px 0px 8px;
+    box-shadow: 0 1px 4px rgba(0,0,0,.5) !important;
+    background-color: white;
+}
+.botonCambio > .Botoncito > span{ font-size: 24px;}
+.botonCambio > .Botoncito:hover{ background-color: #50535C; cursor: pointer;}
+.botonCambio > .Botoncito:hover > span{ color: yellow;}
+*/
+
+
+
+/* 
+.carnet > *,
+.carnet > * > *{ border: rgba(0, 0, 0, .5) 2px dotted; box-sizing: border-box; }
+.carnet > * > * > *,
+.carnet > * > * > * > *,
+.carnet > * > * > * > * > *{ border: #383780 1px dotted; box-sizing: border-box; }
+.noCarnet .carnet .cuerpo .icono { padding-right: 20px; }
+.noCarnet .carnet .cuerpo .icono > div{     position: relative;    width: 80px !important;     height: 80px;    border-radius: 12px;     background-color: #383780;}
+.noCarnet .carnet .cuerpo .icono > div span{     position: relative;    top: 0px;    right: 18px;    font-size: 80px;     color: white; }
+.noCarnet .carnet .pie{ border-radius: 0px 0px 18px 18px; background-color: white !important ; height: 20px; }
+ */
+
+
+
