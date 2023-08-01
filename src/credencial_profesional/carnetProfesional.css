@@ -166,6 +166,15 @@ Estilos propios del carnet
     opacity: .1;
 }
 
+ 
+/* 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+Ajustes y detalles
+*/
+
+.contenedor > h1 { text-align: center; }
+
+
 /* 
 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
 Debug
