@@ -73,13 +73,7 @@ Estilos propios del carnet
 
 
 
-.carnet > .cuerpo{ 
-    top: 90px; 
-    flex-direction: row;
-    padding: 40px 0px;
-}
-
-.carnet > .cuerpo{ display: flex; flex-direction: column; width: calc(100% - 80px); padding: 40px; }
+.carnet > .cuerpo{ display: flex; flex-direction: column; top: 90px; width: calc(100% - 80px); padding: 20px 40px; }
 .carnet > .cuerpo > div{ padding: 0px;}
 .carnet > .cuerpo > div:first-child{
     display: flex;
