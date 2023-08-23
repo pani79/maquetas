@@ -152,7 +152,6 @@ Estilos propios del carnet
 
 .carnet > .cuerpo .matriculacion > p:first-child{ padding-top: 20px; }
 
-.carnet > .cuerpo .cUnicaProfesional,
 
 
 .carnet > .cuerpo .cUnicaProfesional > div > p:first-child,
@@ -215,6 +214,7 @@ Estilos propios del carnet
 
 
 .carnet > .cuerpo p{  font-size: 14px; }
+.carnet > .cuerpo .cUnicaProfesional p{font-size: 18px !important;}
 
 
 /* 
