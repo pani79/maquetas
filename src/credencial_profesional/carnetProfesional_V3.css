@@ -16,7 +16,7 @@ Estilos propios del carnet
     align-self: center;
     width: 900px;
     height: 540px;
-    color: #333333 !important;
+    color: white !important;
     border-radius: 16px;
     overflow: hidden;
     box-sizing: border-box; 
@@ -60,7 +60,7 @@ Estilos propios del carnet
     flex-grow: 2; 
     justify-content: center;
     padding-right: 30px;
-    border-bottom: 2px solid #333333;
+    border-bottom: 2px solid white;
 }
 .carnet > .cabecera > div:last-child h1{    font-size: 34px; line-height: 34px; font-weight: bold; }
 .carnet > .cabecera > div:last-child h3{    font-size: 16px; /* display: flex; align-self: flex-start; */}
@@ -69,23 +69,22 @@ Estilos propios del carnet
 
 
 
-
-
-
-
 .carnet > .cuerpo{ 
     top: 90px; 
     flex-direction: row;
+    gap: 40px;
     padding: 40px 0px;
 }
 
-.carnet > .cuerpo{ display: flex; flex-direction: column; width: calc(100% - 80px); padding: 40px; }
+.carnet > .cuerpo{ display: flex; flex-direction: column; gap: 20px; width: calc(100% - 80px); padding: 40px; }
 .carnet > .cuerpo > div{ padding: 0px;}
 .carnet > .cuerpo > div:first-child{
     display: flex;
     flex-direction: row;
     gap: 40px;
     width: 100%;
+    padding-bottom: 20px;
+    border-bottom: 1px solid white;
 }
 
 .carnet > .cuerpo > div:first-child > div:first-child{ width: calc(100% - 190px); }
@@ -94,17 +93,11 @@ Estilos propios del carnet
     display: flex;
     flex-direction: column; 
 }
-.carnet > .cuerpo > div:first-child > .foto{   
-    position: relative; 
-    width: 150px; 
-    height: 150px; 
-    overflow: hidden; 
-    z-index: 100; 
-}
-.carnet > .cuerpo > div:first-child > .foto > img {    width: 100%; }
-
-/* 
+.carnet > .cuerpo > div:first-child > div:last-child .foto{   position: relative; width: 150px; height: 150px; overflow: hidden; }
+.carnet > .cuerpo > div:first-child > div:last-child .foto > img {    width: 100%; }
+.carnet > .cuerpo .cUnicaProfesional{ padding-top: 20px;  }
 .carnet > .cuerpo .cUnicaProfesional h2{ margin-bottom: 6px; }
+/* 
 .carnet > .cuerpo .nominal > div:nth-child(2){
     display: flex;
     flex-direction: row;
@@ -126,41 +119,10 @@ Estilos propios del carnet
 .carnet > .cuerpo .info{  margin-bottom: 20px; }
 .carnet > .cuerpo .info:last-child{  margin-bottom: 0px; }
 
-.carnet > .cuerpo .cUnicaProfesional{ 
-    gap: 60px; padding: 20px 0px;   
-}
 
-.carnet > .cuerpo .cUnicaProfesional,
-.carnet > .cuerpo .cUnicaProfesional > div,
-.carnet > .cuerpo .matriculacion > div,
-.carnet > .cuerpo .matriculacion > div > div{ display: flex; flex-direction: row; }
-
-.carnet > .cuerpo .cUnicaProfesional > div,
-.carnet > .cuerpo .matriculacion > div > div{ gap: 10px; }
-
-
-.carnet > .cuerpo .cUnicaProfesional,
-.carnet > .cuerpo .matriculacion{
-    border-top: 1px solid #333333; 
-}
-.carnet > .cuerpo .matriculacion{  padding-top: 20px; }
 .carnet > .cuerpo .matriculacion h2{  margin-bottom: 20px; }
-.carnet > .cuerpo .matriculacion > div{gap: 40px; justify-content: space-between; }
-.carnet > .cuerpo .matriculacion > div > div:nth-child(1){ width: 50%; }
-.carnet > .cuerpo .matriculacion > div > div:nth-child(2),
-.carnet > .cuerpo .matriculacion > div > div:nth-child(3){ width: calc((50% - 80px)/2); }
 
-.carnet > .cuerpo .matriculacion > p:first-child{ padding-top: 20px; }
-
-.carnet > .cuerpo .cUnicaProfesional,
-
-
-.carnet > .cuerpo .cUnicaProfesional > div > p:first-child,
-.carnet > .cuerpo .matriculacion > div > div > p:first-child{ text-align: right; }
-.carnet > .cuerpo .cUnicaProfesional > div > p:last-child,
-.carnet > .cuerpo .matriculacion > div > div > p:last-child{ font-weight: bold; }
-
-/* 
+.carnet > .cuerpo .matriculacion > div{ display: flex; flex-direction: row; gap: 40px; }
 .carnet > .cuerpo .matriculacion > div > div:first-child{  width: calc(100% - 340px); }
 .carnet > .cuerpo .matriculacion > div > div:last-child{ width: 300px; }
 
@@ -174,7 +136,7 @@ Estilos propios del carnet
 .carnet > .cuerpo .matriculacion > div > div:first-child > div > p:last-child{ width: calc(100% - 200px); }
 .carnet > .cuerpo .matriculacion > div > div:last-child > div > p:first-child{ width: 160px; }
 .carnet > .cuerpo .matriculacion > div > div:last-child > div > p:last-child{ width: calc(100% - 180px); }
- */
+
 
 
 
@@ -206,15 +168,63 @@ Estilos propios del carnet
 
 .carnet > .escudo span {
     position: relative;
-    z-index: 10; 
     right: -80px;
     font-size: 510px;
-    opacity: .4;
-    color: #37BBED;
+    opacity: .1;
 }
 
 
 .carnet > .cuerpo p{  font-size: 14px; }
+
+/* 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+V3
+*/
+
+.carnet.v3 > .cuerpo .cUnicaProfesional { padding-top: 10px; border-top: 1px solid white; }
+
+ /* 
+.carnet.v3 > .cuerpo{ display: flex; flex-direction: column; gap: 20px; width: calc(100% - 80px); padding: 40px; }
+.carnet.v3 > .cuerpo > div{ padding: 0px;}
+.carnet.v3 > .cuerpo > div:first-child{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    width: 100%;
+    padding-bottom: 20px;
+    border-bottom: 1px solid white;
+}
+
+.carnet.v3 > .cuerpo > div:first-child > div:first-child{ width: calc(100% - 340px); }
+.carnet.v3 > .cuerpo > div:first-child > div:last-child{ 
+    width: 300px;
+    display: flex;
+    flex-direction: column; 
+}
+
+.carnet.v3 > .cuerpo .info > div{  margin-bottom: 20px; }
+.carnet.v3 > .cuerpo .info > div:last-child{  margin-bottom: 0px; }
+
+.carnet.v3 > .cuerpo .cUnicaProfesional > div > p:first-child{ width: 160px; text-align: right; }
+.carnet.v3 > .cuerpo .cUnicaProfesional > div > p:last-child{  width: calc(100% - 180px); }
+
+.carnet.v3 > .cuerpo .matriculacion h2{  margin-bottom: 20px; }
+
+.carnet.v3 > .cuerpo .matriculacion > div{ display: flex; flex-direction: row; gap: 40px; }
+.carnet.v3 > .cuerpo .matriculacion > div > div:first-child{  width: calc(100% - 340px); }
+.carnet.v3 > .cuerpo .matriculacion > div > div:last-child{ width: 300px; }
+
+
+.carnet.v3 > .cuerpo .matriculacion > div > div > div{ display: flex; flex-direction: row; gap: 20px; }
+.carnet.v3 > .cuerpo .matriculacion > div > div > div > p:first-child{ text-align: right; }
+.carnet.v3 > .cuerpo .matriculacion > div > div > div > p:last-child{ font-weight: bold; }
+
+.carnet.v3 > .cuerpo .matriculacion > div > div > div{ margin-bottom: 10px; }
+.carnet.v3 > .cuerpo .matriculacion > div > div:first-child > div > p:first-child{ width: 180px; }
+.carnet.v3 > .cuerpo .matriculacion > div > div:first-child > div > p:last-child{ width: calc(100% - 200px); }
+.carnet.v3 > .cuerpo .matriculacion > div > div:last-child > div > p:first-child{ width: 160px; }
+.carnet.v3 > .cuerpo .matriculacion > div > div:last-child > div > p:last-child{ width: calc(100% - 180px); }
+ */
 
 
 /* 
@@ -224,8 +234,6 @@ Debug
 
 
 /* 
-.carnet > .cuerpo .matriculacion > div > div{  border: 1px dotted blue;}
-.carnet > .cuerpo .matriculacion > div > div *{  background-color: goldenrod;}
 .carnet > .cuerpo > div,
 .carnet > .cuerpo > div *{  border: 1px dotted blue;}
 
