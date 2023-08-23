@@ -150,7 +150,7 @@ Estilos propios del carnet
 .carnet > .pie > .icono > *{ background-repeat: no-repeat !important; }
 .carnet > .pie *{ position: relative; align-self: center;  }
 
-.carnet > .pie span{ display: flex; font-size: 120px; color: white; }
+.carnet > .pie span{ display: flex; font-size: 120px; color: white; z-index: 50;  }
 
 
 
