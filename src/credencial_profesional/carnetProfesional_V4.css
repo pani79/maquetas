@@ -82,7 +82,7 @@ Estilos propios del carnet
     width: 100%;
 }
 
-.carnet > .cuerpo > div:first-child > div:first-child{ width: calc(100% - 190px); border-bottom: 1px solid #333333;  }
+.carnet > .cuerpo > div:first-child > div:first-child{ width: calc(100% - 190px); }
 .carnet > .cuerpo > div:first-child > div:last-child{ 
     width: 150px;
     display: flex;
@@ -101,43 +101,44 @@ Estilos propios del carnet
 .carnet > .cuerpo .info:last-child{  margin-bottom: 0px; }
 
 .carnet > .cuerpo .cUnicaProfesional{ 
-    display: flex;
-    flex-direction: row; 
-    gap: 60px; 
-    padding: 16px 0px;   
+    gap: 60px; padding: 20px 0px;   
 }
 
-.carnet > .cuerpo .matriculacion > div{ display: flex; flex-direction: row; }
+.carnet > .cuerpo .cUnicaProfesional,
+.carnet > .cuerpo .cUnicaProfesional > div,
+.carnet > .cuerpo .matriculacion > div,
+.carnet > .cuerpo .matriculacion > div > div{ display: flex; flex-direction: row; }
 
+.carnet > .cuerpo .cUnicaProfesional > div,
 .carnet > .cuerpo .matriculacion > div > div{ gap: 10px; }
 
 
-.carnet > .cuerpo .cUnicaProfesional{
-    border-bottom: 1px solid #333333; 
-} 
-/* .carnet > .cuerpo .matriculacion*/
-.carnet > .cuerpo .matriculacion{  padding-top: 16px; }
+.carnet > .cuerpo .cUnicaProfesional,
+.carnet > .cuerpo .matriculacion{
+    border-top: 1px solid #333333; 
+}
+.carnet > .cuerpo .matriculacion{  padding-top: 20px; }
 .carnet > .cuerpo .matriculacion h2{  margin-bottom: 20px; }
 .carnet > .cuerpo .matriculacion > div{gap: 40px; justify-content: space-between; }
-.carnet > .cuerpo .matriculacion > p:first-child{ padding-top: 20px; }
-.carnet > .cuerpo p{ position: relative; z-index: 100;  }
-
-
-/* 
 .carnet > .cuerpo .matriculacion > div > div > p:first-child{ width: 110px; }
-.carnet > .cuerpo .matriculacion > div > div:nth-child(1){ width: 60%; }
-.carnet > .cuerpo .matriculacion > div > div:nth-child(2){ width: calc(40% - 40px); }
-*/
-/* 
+.carnet > .cuerpo .matriculacion > div > div:nth-child(1){ width: 40%; }
+.carnet > .cuerpo .matriculacion > div > div:nth-child(2),
+.carnet > .cuerpo .matriculacion > div > div:nth-child(3){ width: calc((60% - 80px)/2); }
+
+.carnet > .cuerpo .matriculacion > p:first-child{ padding-top: 20px; }
+
+
+
+.carnet > .cuerpo .cUnicaProfesional > div > p:first-child,
 .carnet > .cuerpo .matriculacion > div > div > p:first-child{ text-align: right; }
+.carnet > .cuerpo .cUnicaProfesional > div > p:last-child,
 .carnet > .cuerpo .matriculacion > div > div > p:last-child{ font-weight: bold; }
 
- */
+
 
 
 
 .carnet > .pie{ 
-    z-index: 10; 
     bottom: 0px; 
     height: 70px;
     flex-direction: row;
@@ -149,13 +150,12 @@ Estilos propios del carnet
 .carnet > .pie > .icono > *{ background-repeat: no-repeat !important; }
 .carnet > .pie *{ position: relative; align-self: center;  }
 
-.carnet > .pie span{ display: flex; font-size: 120px; color: white;  }
+.carnet > .pie span{ display: flex; font-size: 120px; color: white; z-index: 50;  }
 
 
 
 .carnet > .escudo{  
     position: absolute; 
-    z-index: 1; 
     width: 480px; 
     height: 530px; 
     top: 10px; 
@@ -165,6 +165,7 @@ Estilos propios del carnet
 
 .carnet > .escudo span {
     position: relative;
+    z-index: 10; 
     right: -80px;
     font-size: 510px;
     opacity: .4;
@@ -183,11 +184,9 @@ Debug
 
 
 /* 
-.carnet > .cuerpo .cUnicaProfesional{  border: 2px dashed blueviolet;}
-.carnet > .cuerpo .cUnicaProfesional > *{  border: 1px dotted blue;}
 .carnet > .cuerpo .matriculacion > div{  border: 2px dashed blueviolet;}
-.carnet > .cuerpo .matriculacion > div > *{  border: 1px dotted blue;}
-.carnet > .cuerpo .matriculacion > div > * *{  background-color: goldenrod;}
+.carnet > .cuerpo .matriculacion > div > div{  border: 1px dotted blue;}
+.carnet > .cuerpo .matriculacion > div > div *{  background-color: goldenrod;}
 .carnet > .cuerpo > div,
 .carnet > .cuerpo > div *{  border: 1px dotted blue;}
 
