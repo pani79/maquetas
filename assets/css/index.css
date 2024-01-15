@@ -1,0 +1,22 @@
+.contenedor{ 
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+    gap: 20px;
+}
+.contenedor > *{ 
+    display: flex;
+    width: 1024px;
+    border-radius: 8px;
+}
+
+.msal .fondo,
+.sisa .fondo{
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, .2);
+}
+
+article > h2{margin: 20px;}

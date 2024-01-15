@@ -1,0 +1,209 @@
+
+
+.contenedor > h1 { text-align: center; }
+
+
+/* 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+Estilos propios del carnet
+*/
+
+
+.carnet{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 900px;
+    height: 540px;
+    color: #333333 !important;
+    border-radius: 16px;
+    overflow: hidden;
+    box-sizing: border-box; 
+    box-shadow: 0 1px 4px rgba(0,0,0,.5) !important;
+    margin: 20px auto;
+}
+
+.carnet h1,
+.carnet h2,
+.carnet h3,
+.carnet p{ margin: 0px; padding: 0px; }
+
+
+.carnet > .cabecera, 
+.carnet > .cuerpo, 
+.carnet > .pie,
+.carnet > .escudo{ 
+    position: absolute;
+    overflow: hidden;
+    display: flex; 
+}
+
+.carnet > .cabecera, 
+.carnet > .cuerpo, 
+.carnet > .pie{  width: 100%; }
+
+
+.carnet > .cabecera{ 
+    top: 0px; 
+    height: 90px;
+    flex-direction: row;
+    align-content: center;
+    border-radius: 16px 16px 0px 0px;
+}
+
+.carnet > .cabecera > .icono{   width: 64px; padding-top: 18px; padding-left: 40px; padding-right: 20px; }
+.carnet > .cabecera > .icono span{   font-size: 64px; color: #a13d3b !important;  }
+.carnet > .cabecera > div:last-child{   
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2; 
+    justify-content: center;
+    padding-right: 30px;
+    border-bottom: 2px solid #333333;
+}
+.carnet > .cabecera > div:last-child h1{    font-size: 34px; line-height: 34px; font-weight: bold; }
+.carnet > .cabecera > div:last-child h3{    font-size: 16px; /* display: flex; align-self: flex-start; */}
+.carnet > .cabecera > div:last-child > *{ display: flex; text-align: left; align-self: flex-start; }
+
+
+
+
+
+
+
+
+.carnet > .cuerpo{ display: flex; flex-direction: column; top: 90px; width: calc(100% - 80px); padding: 20px 40px; }
+.carnet > .cuerpo > div{ padding: 0px;}
+.carnet > .cuerpo > div:first-child{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    width: 100%;
+}
+
+.carnet > .cuerpo > div:first-child > div:first-child{ width: calc(100% - 190px); }
+.carnet > .cuerpo > div:first-child > div:last-child{ 
+    width: 150px;
+    display: flex;
+    flex-direction: column; 
+}
+.carnet > .cuerpo > div:first-child > .foto{   
+    position: relative; 
+    width: 150px; 
+    height: 150px; 
+    overflow: hidden; 
+    z-index: 100; 
+}
+.carnet > .cuerpo > div:first-child > .foto > img {    width: 100%; }
+
+.carnet > .cuerpo .info{  margin-bottom: 20px; }
+.carnet > .cuerpo .info:last-child{  margin-bottom: 0px; }
+
+.carnet > .cuerpo .cUnicaProfesional{ 
+    gap: 60px; padding: 20px 0px;   
+}
+
+.carnet > .cuerpo .cUnicaProfesional,
+.carnet > .cuerpo .cUnicaProfesional > div,
+.carnet > .cuerpo .matriculacion > div,
+.carnet > .cuerpo .matriculacion > div > div{ display: flex; flex-direction: row; }
+
+.carnet > .cuerpo .cUnicaProfesional > div,
+.carnet > .cuerpo .matriculacion > div > div{ gap: 10px; }
+
+
+.carnet > .cuerpo .cUnicaProfesional,
+.carnet > .cuerpo .matriculacion{
+    border-top: 1px solid #333333; 
+}
+.carnet > .cuerpo .matriculacion{  padding-top: 20px; }
+.carnet > .cuerpo .matriculacion h2{  margin-bottom: 20px; }
+.carnet > .cuerpo .matriculacion > div{gap: 40px; justify-content: space-between; }
+.carnet > .cuerpo .matriculacion > div > div > p:first-child{ width: 110px; }
+.carnet > .cuerpo .matriculacion > div > div:nth-child(1){ width: 40%; }
+.carnet > .cuerpo .matriculacion > div > div:nth-child(2),
+.carnet > .cuerpo .matriculacion > div > div:nth-child(3){ width: calc((60% - 80px)/2); }
+
+.carnet > .cuerpo .matriculacion > p:first-child{ padding-top: 20px; }
+
+
+
+.carnet > .cuerpo .cUnicaProfesional > div > p:first-child,
+.carnet > .cuerpo .matriculacion > div > div > p:first-child{ text-align: right; }
+.carnet > .cuerpo .cUnicaProfesional > div > p:last-child,
+.carnet > .cuerpo .matriculacion > div > div > p:last-child{ font-weight: bold; }
+
+
+
+
+
+.carnet > .pie{ 
+    bottom: 0px; 
+    height: 70px;
+    flex-direction: row;
+    justify-content: flex-end;
+    border-radius: 0px 0px 16px 16px;
+}
+
+.carnet > .pie > .icono{ margin-right: 40px; }
+.carnet > .pie > .icono > *{ background-repeat: no-repeat !important; }
+.carnet > .pie *{ position: relative; align-self: center;  }
+
+.carnet > .pie span{ display: flex; font-size: 120px; color: white; z-index: 50;  }
+
+
+
+.carnet > .escudo{  
+    position: absolute; 
+    width: 480px; 
+    height: 530px; 
+    top: 10px; 
+    right: 0px; 
+    text-align: right;
+}
+
+.carnet > .escudo span {
+    position: relative;
+    z-index: 10; 
+    right: -80px;
+    font-size: 510px;
+    opacity: .4;
+    color: #37BBED;
+}
+
+
+.carnet > .cuerpo p{  font-size: 18px; }
+.carnet > .cuerpo .cUnicaProfesional p{font-size: 22px !important;}
+
+
+/* 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+Debug
+*/
+
+
+/* 
+.carnet > .cuerpo .matriculacion > div{  border: 2px dashed blueviolet;}
+.carnet > .cuerpo .matriculacion > div > div{  border: 1px dotted blue;}
+.carnet > .cuerpo .matriculacion > div > div *{  background-color: goldenrod;}
+.carnet > .cuerpo > div,
+.carnet > .cuerpo > div *{  border: 1px dotted blue;}
+
+.carnet > .cuerpo .nominal > div:nth-child(2) > div,
+.carnet > .cuerpo .nominal > div:nth-child(2) > div *{  border: 1px dotted black;}
+.carnet > .cuerpo .matriculacion .info{  background-color: gainsboro; }
+
+.carnet > .cuerpo .matriculacion .info > div{  background-color: goldenrod; }
+.carnet > .cabecera, 
+.carnet > .cuerpo, 
+.carnet > .pie{ border: 1px dotted black; }
+
+
+.carnet > .cuerpo .cUnicaProfesional,
+.carnet > .cuerpo .cUnicaProfesional *{
+    border: 1px dotted black;
+}
+
+
+ */

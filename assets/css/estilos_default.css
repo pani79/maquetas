@@ -1,0 +1,61 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/* Importaciones */
+
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@500&family=Roboto:wght@300;500;700;900&display=swap');
+
+
+/* BASICOS */
+
+body{
+	position:absolute;
+	width: 100%;
+	min-width: 750px;
+	margin: 0px;
+	padding: 0px;
+	
+	font-family:'Encode Sans', sans-serif;
+	font-size:12px;
+	font-weight: normal;
+	color: #333;
+	
+	background-color:#37BBED; /* G3 */
+}
+
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-content: center;
+    gap: 40px;
+}
+
+.msal{
+    font-family:'Encode Sans', sans-serif;
+    color: white;
+    background-color: #37BBED;
+}
+.msal .fondo{
+    color: #333;
+    background-color: white;
+}
+
+
+.sisa{
+    font-family:'Roboto', sans-serif;
+    color: white;
+    background-color: #3366ff;
+}
+
+.sisa .fondo{
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+
+
+.contenedor{ border: 1px dashed blue;}
+.contenedor > *{ border: 1px dotted black;}
