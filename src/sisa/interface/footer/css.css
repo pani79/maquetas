@@ -8,6 +8,8 @@ body{
     background-color: #f5f5f5; 
 	font-family:'Roboto', sans-serif;
     font-size: 12px;
+    margin: 0px;
+    padding: 0px;
 }
 
 #pie{
@@ -25,6 +27,7 @@ body{
     margin: 40px 0px;
     align-self: center;
     justify-content: center;
+    gap: 40px;
 }
 
 #pie > .contenedor p{
@@ -39,10 +42,9 @@ body{
 .contenedor > div{
     display: flex;
     flex-direction: row;
-    gap: 40px;
 }
 
-.contenedor > div{ width: calc((100% - 40px)/2); }
+.contenedor > div{ width: calc((100% - 40px)/2); gap: 20px; }
 
 .pie_sisa,
 .pie_msal { 
@@ -51,11 +53,11 @@ body{
     width: 100%; 
 }
 
-.pie_sisa > div:first-child{ width: 244px !important; background-color: violet; }
-.pie_sisa > div:last-child{ width: calc(100% - 264px); }
+.pie_sisa > div:first-child{ width: 244px !important; }     /* background-color: violet; */
+.pie_sisa > div:last-child{ width: calc(100% - 254px); }
 
-.pie_msal > div:first-child{ width: 173px; background-color: blueviolet; }
-.pie_msal > div:last-child{ width: calc(100% - 193px); }
+.pie_msal > div:first-child{ width: 173px !important; }                /* background-color: blueviolet;  */
+.pie_msal > div:last-child{ width: calc(100% - 183px); }
 
 .sisa_logo_verneg {
     width: 244px;
@@ -79,53 +81,53 @@ body{
 
 
 
-
+/* 
 #pie > .contenedor{ border: 1px dashed blue;}
 #pie > .contenedor > *{ border: 1px dotted black;}
 #pie > .contenedor > * > *{ border: 1px dashed red;}
+*/
+
+
 
 
 /*  X-Large devices (large desktops, less than 1400px) */
 @media (max-width: 1399.98px) {     
-    .contenedor{ 
-        background-color: green;   
-        width: 1024px;    
-    }
+    .contenedor{        width: 1024px;    }
+    /* .contenedor{ background-color: green; } */
 }
-
-
 
 /*  Large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) { 
     
-    .contenedor{ 
-        background-color: greenyellow;
-        width: 992px;    
-    }
+    .contenedor{  width: 992px; }
+    /* .contenedor{ background-color: greenyellow; } */
 }
-
 
 /*  Medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) { 
     
-    .contenedor{ 
-        background-color: orange; 
-        width: 768px;      
-    }
-    /* .contenedor > div{ width: 768px; } */
+    .contenedor{  width: 768px;    }
+    /* .contenedor{ background-color: orange; } */
 }
 
 /*  Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) { 
     
     .contenedor{ 
-        background-color: orangered;  
         width: 576px;    
         flex-direction: column;
         align-items: center;
     }
-    .contenedor > div{ width: 576px; }
+    .contenedor > div{ width: 100%; gap: 20px; }
 
+    .pie_sisa,
+    .pie_msal { 
+        justify-content: center; 
+    }
+    
+    .contenedor > div > div{ width: initial !important;  }
+    
+    /* .contenedor{ background-color: orangered; } */
 }
 
 /*  X-Small devices (portrait phones, less than 576px) */
@@ -136,6 +138,8 @@ body{
         flex-direction: column;
         align-items: center;
     }
+    .contenedor > div{      gap: 10px;    }
+    .contenedor > div p{    text-align: center;    }
     
-    .contenedor{ background-color: red;    }
+    /* .contenedor{ background-color: red;    } */
 }
