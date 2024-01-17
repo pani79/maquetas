@@ -21,18 +21,16 @@ body{
 }
 
 
-#pie >  .contenedor{
+#pie > .contenedor{
     display: flex;
-    flex-direction: row;
     width: 1200px;
     margin: 40px 0px;
-    /* align-self: center; */
-    align-items: flex-start;
+    align-self: center;
     justify-content: center;
     gap: 40px;
 }
 
-#pie >  .contenedor p{
+#pie > .contenedor p{
     color: white;
     font-size: 12px;
     font-weight: 500;
@@ -40,28 +38,26 @@ body{
     line-height: 17px
 }
 
-#pie > .contenedor > div{
+.contenedor,
+.contenedor > div{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 }
 
-/* #pie > .contenedor > div{ width: calc((100% - 40px)/2); gap: 0px; } */
+.contenedor > div{ width: calc((100% - 40px)/2); gap: 20px; }
 
 .pie_sisa,
 .pie_msal { 
     display: flex;
-    align-items: center; 
+    justify-content: space-between; 
     width: 100%; 
 }
-/* 
-.pie_sisa > div:first-child{ width: 244px !important; }     
+
+.pie_sisa > div:first-child{ width: 244px !important; }     /* background-color: violet; */
 .pie_sisa > div:last-child{ width: calc(100% - 254px); }
 
-.pie_msal > div:first-child{ width: 173px !important; }                
+.pie_msal > div:first-child{ width: 173px !important; }                /* background-color: blueviolet;  */
 .pie_msal > div:last-child{ width: calc(100% - 183px); }
-*/
-
-
 
 .sisa_logo_verneg {
     width: 244px;
@@ -85,80 +81,65 @@ body{
 
 
 
+/* 
+#pie > .contenedor{ border: 1px dashed blue;}
+#pie > .contenedor > *{ border: 1px dotted black;}
+#pie > .contenedor > * > *{ border: 1px dashed red;}
+*/
+
 
 
 
 /*  X-Large devices (large desktops, less than 1400px) */
 @media (max-width: 1399.98px) {     
-    #pie > .contenedor{        width: 1024px;    }
-    /* #pie > .contenedor{ background-color: green; } */
+    .contenedor{        width: 1024px;    }
+    /* .contenedor{ background-color: green; } */
 }
 
 /*  Large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) { 
     
-    #pie > .contenedor{  width: 992px; }
-    /* #pie > .contenedor{ background-color: greenyellow; } */
+    .contenedor{  width: 992px; }
+    /* .contenedor{ background-color: greenyellow; } */
 }
 
 /*  Medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) { 
     
-    #pie > .contenedor{  width: 768px;    }
-    /* #pie > .contenedor{ background-color: orange; } */
+    .contenedor{  width: 768px;    }
+    /* .contenedor{ background-color: orange; } */
 }
 
 /*  Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) { 
     
-    #pie > .contenedor{ 
+    .contenedor{ 
         width: 576px;    
         flex-direction: column;
         align-items: center;
     }
-    #pie > .contenedor > div{ width: 100%; gap: 20px; }
+    .contenedor > div{ width: 100%; gap: 20px; }
 
     .pie_sisa,
     .pie_msal { 
         justify-content: center; 
     }
     
-    #pie > .contenedor > div > div{ width: initial !important;  }
-    #pie > .contenedor > div > div p{    text-align: center;    }
+    .contenedor > div > div{ width: initial !important;  }
     
-    /*#pie > .contenedor{ background-color: orangered; }  */
+    /* .contenedor{ background-color: orangered; } */
 }
 
 /*  X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) { 
     
-    #pie > .contenedor{
-        flex-direction: column !important;
+    .contenedor,
+    .contenedor > div{
+        flex-direction: column;
         align-items: center;
     }
-    #pie > .contenedor > div > div{      gap: 10px;    }
+    .contenedor > div{      gap: 10px;    }
+    .contenedor > div p{    text-align: center;    }
     
-    /* #pie > .contenedor > div > div{ background-color: red;    } */ 
+    /* .contenedor{ background-color: red;    } */
 }
-
-
-/* Debug */
-
-/*  
-.pie_sisa,
-.pie_msal { 
-    background-color: violet;
-    border: dashed 1px yellow;
-}
-
-.pie_sisa > div,
-.pie_msal > div { 
-    border: dotted 2px black;
-}
-#pie > .contenedor{border: dashed 3px yellow;}
-
-#pie > .contenedor > div{     border: dotted 2px darkblue;   }
-#pie > .contenedor > div > *{     border: dotted 1px black;   }
-*/
-/* background-color: violet; */
-/* background-color: blueviolet;  */
