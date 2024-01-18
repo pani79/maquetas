@@ -3,9 +3,142 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>SISA :: Nueva interface (V4)</title>
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="../../../../assets/css/sisaFont.css">
 </head>
 <body>
-    <h3>Holis pipol</h3>
+
+
+    <div class="contenedorPagina">
+
+
+
+        
+        <!-- Cabecera i =========================================================== -->
+        <header class="header">
+            <div class="contenedor">
+    
+    
+                <!-- Logos i = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = -->
+                <div class="logos">
+                    <div class="sisa">
+                        <span class="icon-logo_sisa_completo"></span>
+                    </div> 
+                    <div class="msal">
+                        <span class="icon-logo_msal"></span>
+                    </div>
+                    <!-- 
+  
+                    <div class="entorno {{entornoInfo['entorno']}}">
+                    <span class="icon-{{entornoInfo['icono']}}"></span>
+                    <div class="texto">
+                        <h3>{{entornoInfo['entorno']}}</h3>
+                        <p>{{entornoInfo['descripcion']}}</p>
+                    </div>
+                    </div>
+                     -->
+                </div>
+                <!-- Logos f = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = -->
+                
+    
+    
+    
+                <!-- Panel de usuario i = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = -->
+                
+                <div class="col-5 col-sm-4 col-lg-3">
+                    <!-- 
+                    <div class="contenedorDeBotones">
+                    
+                    <div *ngIf="loggedIn" class="panelUsuarioLoguin">
+                        <div class="imagen">
+                        <span class="icon-mod_usuarios"></span>
+                        </div>
+                        <div class="texto">
+                        <h3>{{usuario['nombre']| titlecase}} {{usuario['apellido']| titlecase}} </h3>
+                        <a (click)="logOutAdvierte()">Cerrar sesion</a>
+                        </div>
+                    </div>
+                    
+                    <sisa-c-int-ele-boton 
+                        *ngIf="!loggedIn" 
+                        (click)="logInPopUp()"
+                        [info]="['boton', 'general', 'acceder', 'Ingresar']">
+                    </sisa-c-int-ele-boton>
+                    
+                    </div>
+                    -->
+                </div>
+                <!-- Panel de usuario f = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = -->
+                
+    
+    
+            </div>
+        </header>
+        <!-- Cabecera f =========================================================== -->
+        
+
+
+        
+        <!-- Cuerpo i =========================================================== -->
+        
+        <div class="cuerpo">
+            <div class="contenedor">
+
+                <h1>Noticias</h1>
+                <article class="noticias"></article>
+                <h1>Accesos</h1>
+                <article class="noticias"></article>
+                <p>If you're wondering how to claim your add-ons, fret not. Owners of the Necronomicon Edition don't need to take any extra steps; as per the developer's Steam blog post, they'll receive their complimentary DLCs within 24 hours of the latest version release. And in case you're curious about what you're getting, here's the list:</p>
+                
+                <h1>Servicios</h1>
+                <article class="noticias"></article>
+                <!-- 
+                 -->
+            </div>
+        </div>
+        
+        <!-- Cuerpo f =========================================================== -->
+        
+
+        
+
+        
+        <!-- Pie i =========================================================== -->
+        <footer class="footer">
+    
+            <div class="contenedor">
+                <!-- Seguridad i ''''''''''''''''''''''''''''''''''''''''''''''''  -->
+                    
+                <div class="contenedorDatos dnsisa">
+                    <div>
+                        <h4>DNSISA</h4>
+                        <p>Dirección Nacional de Sistemas de Información<br>Sanitario Argentino</p>
+                        <!-- <p class="ch">by Bruno Monti</p> -->
+                    </div>
+                </div>
+                <div class="contenedorDatos sisa">
+                    <div class="contenedorLogo">
+                        <span class="icon-logo_sisa sisa"></span>
+                    </div>
+                    <p>Sistema Integrado de Información<br>Sanitaria Argentino</p> 
+                </div>
+                
+            </div><!-- Seguridad f '''''''''''''''''''''''''''''''''''''''''''''''' -->
+        
+        
+            <div class="contenedor">
+                <span class="icon-logo_msal msal"></span>
+                <span class="icon-logo_argentina_presidencia presidencia"></span>
+                <span class="icon-logo_publicidad publicidad"></span>
+            </div>
+        </footer>
+        <!-- Pie f =========================================================== -->
+    
+    </div>
+
+    <div class="popUp"></div>
+    <div class="menuLateral"></div>
+
 </body>
 </html>
