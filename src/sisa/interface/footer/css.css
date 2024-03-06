@@ -78,12 +78,10 @@ body{
     background-repeat: no-repeat;
 }
 
-
-
-
-
-
-
+#pie > .contenedor > div > div > div{
+    /* background-color: palevioletred; */
+    margin-bottom: 10px;
+}
 
 
 
